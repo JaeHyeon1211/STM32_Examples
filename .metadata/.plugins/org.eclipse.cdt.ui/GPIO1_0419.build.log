@@ -1,0 +1,10 @@
+12:23:08 **** Build of configuration Debug for project GPIO1_0419 ****
+make -j4 all 
+arm-none-eabi-size   GPIO1_0419.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5792	     20	   1636	   7448	   1d18	GPIO1_0419.elf
+Finished building: default.size.stdout
+ 
+
+12:23:09 Build Finished. 0 errors, 0 warnings. (took 350ms)
+

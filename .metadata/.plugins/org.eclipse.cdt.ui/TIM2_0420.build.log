@@ -1,0 +1,10 @@
+12:23:10 **** Build of configuration Debug for project TIM2_0420 ****
+make -j4 all 
+arm-none-eabi-size   TIM2_0420.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9692	     20	   1708	  11420	   2c9c	TIM2_0420.elf
+Finished building: default.size.stdout
+ 
+
+12:23:10 Build Finished. 0 errors, 0 warnings. (took 300ms)
+

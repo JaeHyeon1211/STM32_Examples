@@ -1,0 +1,17 @@
+12:23:11 **** Build of configuration Debug for project TIM4_0420 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:332:3: warning: implicit declaration of function '_HAL_TIM_SET_COMPARE' [-Wimplicit-function-declaration]
+  332 |   _HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1,10000-1);
+      |   ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "TIM4_0420.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\KCCI12\STM32CubeIDE\workspace_1.9.0\TIM4_0420\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIM4_0420.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.9.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `HAL_GPIO_EXTI_Callback':
+C:/Users/KCCI12/STM32CubeIDE/workspace_1.9.0/TIM4_0420/Debug/../Core/Src/main.c:332: undefined reference to `_HAL_TIM_SET_COMPARE'
+c:\st\stm32cubeide_1.9.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: C:/Users/KCCI12/STM32CubeIDE/workspace_1.9.0/TIM4_0420/Debug/../Core/Src/main.c:333: undefined reference to `_HAL_TIM_SET_COMPARE'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: TIM4_0420.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+12:23:12 Build Failed. 4 errors, 1 warnings. (took 880ms)
+

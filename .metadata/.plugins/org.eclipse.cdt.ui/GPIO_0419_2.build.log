@@ -1,0 +1,10 @@
+14:04:47 **** Incremental Build of configuration Debug for project GPIO_0419_2 ****
+make -j4 all 
+arm-none-eabi-size   GPIO_0419_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5940	     20	   1636	   7596	   1dac	GPIO_0419_2.elf
+Finished building: default.size.stdout
+ 
+
+14:04:47 Build Finished. 0 errors, 0 warnings. (took 330ms)
+

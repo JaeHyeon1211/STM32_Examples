@@ -1,0 +1,10 @@
+12:23:16 **** Build of configuration Debug for project along_TIM ****
+make -j4 all 
+arm-none-eabi-size   along_TIM.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7932	     20	   1708	   9660	   25bc	along_TIM.elf
+Finished building: default.size.stdout
+ 
+
+12:23:16 Build Finished. 0 errors, 0 warnings. (took 330ms)
+

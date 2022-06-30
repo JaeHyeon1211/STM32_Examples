@@ -1,0 +1,10 @@
+12:23:08 **** Build of configuration Debug for project EXTI1_0419 ****
+make -j4 all 
+arm-none-eabi-size   EXTI1_0419.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5972	     20	   1644	   7636	   1dd4	EXTI1_0419.elf
+Finished building: default.size.stdout
+ 
+
+12:23:08 Build Finished. 0 errors, 0 warnings. (took 330ms)
+
